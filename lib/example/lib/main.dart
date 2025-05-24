@@ -8,19 +8,17 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
   @override
-   Widget build(BuildContext context) {
+  Widget build(BuildContext context) {
     return UniSizeWidget(
-      designWidth: 375,  // Your design width (optional, default: 375)
+      designWidth: 375, // Your design width (optional, default: 375)
       designHeight: 812, // Your design height (optional, default: 812)
       builder: (context, orientation, screenType) {
-        return MaterialApp(
-          title: 'UniSize Demo',
-          home: MyHomePage(),
-        );
+        return MaterialApp(title: 'UniSize Demo', home: MyHomePage());
       },
     );
   }
 }
+
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
   @override
@@ -33,11 +31,11 @@ class MyHomePage extends StatelessWidget {
         ),
       ),
       body: Container(
-        width: 200.dp,        // Use .dp for sizes
-        height: 100.dp,       // Use .dp for sizes
+        width: 200.dp, // Use .dp for sizes
+        height: 100.dp, // Use .dp for sizes
         padding: EdgeInsets.all(16.dp), // Use .dp for padding
         margin: EdgeInsets.symmetric(
-          horizontal: 20.dp,  // Use .dp for margins
+          horizontal: 20.dp, // Use .dp for margins
           vertical: 10.dp,
         ),
         decoration: BoxDecoration(
@@ -46,8 +44,8 @@ class MyHomePage extends StatelessWidget {
         child: Text(
           'Hello UniSize!',
           style: TextStyle(
-            fontSize: 16.sp,    // Use .sp for font size
-            height: 1.5,        // Line height can remain unitless
+            fontSize: 16.sp, // Use .sp for font size
+            height: 1.5, // Line height can remain unitless
           ),
         ),
       ),
