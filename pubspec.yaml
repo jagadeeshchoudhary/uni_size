@@ -1,6 +1,6 @@
 name: uni_size
 description: "A Flutter package for responsive design using .dp and .sp units that scale with device screen and text settings. Works consistently on all platforms."
-version: 1.0.2
+version: 1.0.3
 homepage: https://github.com/jagadeeshchoudhary/uni_size
 repository: https://github.com/jagadeeshchoudhary/uni_size
 issue_tracker: https://github.com/jagadeeshchoudhary/uni_size/issues
