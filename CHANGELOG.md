@@ -35,3 +35,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Formatted all source files for consistency (no functional/code logic changes)
+
+## [1.0.2] - 2025-05-24
+
+### Changed
+- Added example and changed description (no functional/code logic changes)

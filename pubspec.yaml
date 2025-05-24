@@ -1,6 +1,6 @@
 name: uni_size
-description: "A comprehensive Flutter package for responsive UI design with universal sizing units that work consistently across all platforms. Provides .dp for sizes and .sp for fonts with automatic scaling based on screen density and text scale factors."
-version: 1.0.1
+description: "A Flutter package for responsive design using .dp and .sp units that scale with device screen and text settings. Works consistently on all platforms."
+version: 1.0.2
 homepage: https://github.com/jagadeeshchoudhary/uni_size
 repository: https://github.com/jagadeeshchoudhary/uni_size
 issue_tracker: https://github.com/jagadeeshchoudhary/uni_size/issues

@@ -40,6 +40,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return UniSizeWidget(
@@ -60,6 +61,7 @@ class MyApp extends StatelessWidget {
 
 ```dart
 class MyHomePage extends StatelessWidget {
+  const MyHomePage({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -101,6 +103,7 @@ If you prefer not to use `UniSizeWidget`, you can manually initialize:
 
 ```dart
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
