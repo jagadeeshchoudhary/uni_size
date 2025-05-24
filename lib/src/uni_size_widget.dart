@@ -1,17 +1,18 @@
 part of '../uni_size.dart';
 
 /// Callback function type for responsive builder
-typedef UniSizeBuilder = Widget Function(
-  BuildContext context,
-  Orientation orientation,
-  UniSizeScreenType screenType,
-);
+typedef UniSizeBuilder =
+    Widget Function(
+      BuildContext context,
+      Orientation orientation,
+      UniSizeScreenType screenType,
+    );
 
 /// A widget that automatically initializes and manages UniSize
-/// 
+///
 /// Wrap your MaterialApp or main app widget with this to automatically
 /// handle UniSize initialization and updates on orientation changes.
-/// 
+///
 /// Example:
 /// ```dart
 /// UniSizeWidget(
@@ -78,9 +79,9 @@ class UniSizeWidget extends StatelessWidget {
 }
 
 /// A builder widget for responsive designs
-/// 
+///
 /// Provides different widgets based on screen type (mobile, tablet, desktop).
-/// 
+///
 /// Example:
 /// ```dart
 /// ResponsiveBuilder(
@@ -117,9 +118,9 @@ class ResponsiveBuilder extends StatelessWidget {
 }
 
 /// A widget that rebuilds when orientation changes
-/// 
+///
 /// Useful for layouts that need to adapt to orientation changes.
-/// 
+///
 /// Example:
 /// ```dart
 /// OrientationResponsive(
@@ -145,7 +146,7 @@ class OrientationResponsive extends StatelessWidget {
     return OrientationBuilder(
       builder: (context, orientation) {
         context.updateUniSize();
-        
+
         if (orientation == Orientation.landscape && landscape != null) {
           return landscape!;
         }
@@ -156,9 +157,9 @@ class OrientationResponsive extends StatelessWidget {
 }
 
 /// A conditional widget based on screen type
-/// 
+///
 /// Shows different widgets or hides content based on screen type.
-/// 
+///
 /// Example:
 /// ```dart
 /// ConditionalWidget(

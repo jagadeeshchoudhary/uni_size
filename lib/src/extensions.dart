@@ -3,10 +3,10 @@ part of '../uni_size.dart';
 /// Extension on num to provide sizing utilities
 extension UniSizeExtension on num {
   /// Convert to density-independent pixels (dp)
-  /// 
-  /// Use this for all size-related properties like width, height, 
+  ///
+  /// Use this for all size-related properties like width, height,
   /// padding, margin, border radius, etc.
-  /// 
+  ///
   /// Example:
   /// ```dart
   /// Container(
@@ -18,10 +18,10 @@ extension UniSizeExtension on num {
   double get dp => UniSizeDevice.calculateDp(this);
 
   /// Convert to scalable pixels (sp) for fonts
-  /// 
+  ///
   /// Use this specifically for font sizes. It considers the device's
   /// text scale factor and provides consistent text sizing across platforms.
-  /// 
+  ///
   /// Example:
   /// ```dart
   /// Text(
@@ -32,9 +32,9 @@ extension UniSizeExtension on num {
   double get sp => UniSizeDevice.calculateSp(this);
 
   /// Get responsive value based on screen type
-  /// 
+  ///
   /// Provides different values for mobile, tablet, and desktop screens.
-  /// 
+  ///
   /// Example:
   /// ```dart
   /// final fontSize = 16.responsive(
@@ -43,11 +43,7 @@ extension UniSizeExtension on num {
   ///   desktop: 18.sp,
   /// );
   /// ```
-  T responsive<T>({
-    required T mobile,
-    T? tablet,
-    T? desktop,
-  }) {
+  T responsive<T>({required T mobile, T? tablet, T? desktop}) {
     return UniSizeDevice.responsive<T>(
       mobile: mobile,
       tablet: tablet,
@@ -63,14 +59,18 @@ extension UniSizeExtension on num {
   /// Convert to percentage of screen width
   double get sw => (this / 100) * UniSizeDevice.logicalWidth;
 
-  /// Convert to percentage of screen height  
+  /// Convert to percentage of screen height
   double get sh => (this / 100) * UniSizeDevice.logicalHeight;
 
   /// Convert to percentage of smaller screen dimension
-  double get smin => (this / 100) * min(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
+  double get smin =>
+      (this / 100) *
+      min(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
 
   /// Convert to percentage of larger screen dimension
-  double get smax => (this / 100) * max(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
+  double get smax =>
+      (this / 100) *
+      max(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
 
   /// Convert to pixels (1:1 mapping)
   double get px => toDouble();
@@ -78,14 +78,18 @@ extension UniSizeExtension on num {
   /// Convert to viewport width percentage (CSS vw equivalent)
   double get vw => (this / 100) * UniSizeDevice.logicalWidth;
 
-  /// Convert to viewport height percentage (CSS vh equivalent)  
+  /// Convert to viewport height percentage (CSS vh equivalent)
   double get vh => (this / 100) * UniSizeDevice.logicalHeight;
 
   /// Convert to viewport minimum percentage (CSS vmin equivalent)
-  double get vmin => (this / 100) * min(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
+  double get vmin =>
+      (this / 100) *
+      min(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
 
   /// Convert to viewport maximum percentage (CSS vmax equivalent)
-  double get vmax => (this / 100) * max(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
+  double get vmax =>
+      (this / 100) *
+      max(UniSizeDevice.logicalWidth, UniSizeDevice.logicalHeight);
 }
 
 /// Extension on BuildContext for UniSize utilities
@@ -113,22 +117,22 @@ extension UniSizeContextExtension on BuildContext {
 
   /// Get device information
   UniSizeDeviceType get deviceType => UniSizeDevice.deviceType;
-  
+
   /// Get screen type
   UniSizeScreenType get screenType => UniSizeDevice.screenType;
-  
+
   /// Check if mobile device
   bool get isMobile => UniSizeDevice.isMobile;
-  
+
   /// Check if tablet device
   bool get isTablet => UniSizeDevice.isTablet;
-  
+
   /// Check if desktop device
   bool get isDesktop => UniSizeDevice.isDesktop;
-  
+
   /// Check if portrait orientation
   bool get isPortrait => UniSizeDevice.isPortrait;
-  
+
   /// Check if landscape orientation
   bool get isLandscape => UniSizeDevice.isLandscape;
 }

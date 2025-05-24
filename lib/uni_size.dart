@@ -18,7 +18,8 @@ part 'src/uni_size_widget.dart';
 part 'src/constants.dart';
 
 /// Initialize UniSize - Call this before using any sizing extensions
-void initUniSize(BuildContext context, {
+void initUniSize(
+  BuildContext context, {
   double? designWidth,
   double? designHeight,
   double? minTextScaleFactor,
