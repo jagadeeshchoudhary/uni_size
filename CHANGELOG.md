@@ -31,5 +31,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Improved text scaling implementation
 - Comprehensive device information management
 
-## [Unreleased]
-- Future features and improvements will be listed here
+## [1.0.1] - 2025-05-24
+
+### Changed
+- Formatted all source files for consistency (no functional/code logic changes)
