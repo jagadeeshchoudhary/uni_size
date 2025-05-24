@@ -60,3 +60,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Changed .dp logic
+
+## [1.0.7] - 2025-05-25
+
+### Changed
+- Added sponsor button
