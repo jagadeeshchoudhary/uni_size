@@ -1,5 +1,7 @@
 # UniSize
 
+[![Fuel Me with Coffee](https://img.shields.io/badge/☕%20Fuel%20Me%20with%20Coffee-794c2f?style=for-the-badge)](https://github.com/sponsors/jagadeeshchoudhary)
+
 A comprehensive Flutter package for responsive UI design with universal sizing units that work consistently across all platforms. UniSize provides `.dp` for sizes and `.sp` for fonts with automatic scaling based on screen density and text scale factors.
 
 ## Features

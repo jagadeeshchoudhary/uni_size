@@ -5,6 +5,7 @@ homepage: https://github.com/jagadeeshchoudhary/uni_size
 repository: https://github.com/jagadeeshchoudhary/uni_size
 issue_tracker: https://github.com/jagadeeshchoudhary/uni_size/issues
 documentation: https://github.com/jagadeeshchoudhary/uni_size#readme
+funding: https://github.com/sponsors/jagadeeshchoudhary
 
 environment:
   sdk: ^3.7.2
