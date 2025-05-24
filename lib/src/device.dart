@@ -227,7 +227,7 @@ class UniSizeDevice {
     // Base scale factor from design width
     final scaleWidth = _logicalWidth / _designWidth;
     final scaleHeight = _logicalHeight / _designHeight;
-    final scale = min(scaleWidth, scaleHeight);
+    final scale = (scaleWidth + scaleHeight) / 2;
 
     // Apply platform-specific scaling
     final platformAdjustedScale = scale * _platformScaleFactor;
