@@ -57,10 +57,10 @@ extension UniSizeExtension on num {
   double get dip => dp;
 
   /// Convert to percentage of screen width
-  double get sw => (this / 100) * UniSizeDevice.logicalWidth;
+  double get w => (this / 100) * UniSizeDevice.logicalWidth;
 
   /// Convert to percentage of screen height
-  double get sh => (this / 100) * UniSizeDevice.logicalHeight;
+  double get h => (this / 100) * UniSizeDevice.logicalHeight;
 
   /// Convert to percentage of smaller screen dimension
   double get smin =>

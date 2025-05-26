@@ -65,3 +65,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 - Added sponsor button
+
+## [1.1.7] - 2025-05-26
+
+### Changed
+- For percent of screen width use .w indtead of .sw, and .h for height instead fo .sh

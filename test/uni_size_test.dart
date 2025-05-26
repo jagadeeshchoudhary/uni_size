@@ -1053,8 +1053,8 @@ void main() {
               expect(testValue.dp, isA<double>());
               expect(testValue.sp, isA<double>());
               expect(testValue.dip, isA<double>());
-              expect(testValue.sw, isA<double>());
-              expect(testValue.sh, isA<double>());
+              expect(testValue.w, isA<double>());
+              expect(testValue.h, isA<double>());
               expect(testValue.smin, isA<double>());
               expect(testValue.smax, isA<double>());
               expect(testValue.px, isA<double>());
